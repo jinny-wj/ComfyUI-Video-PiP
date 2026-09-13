@@ -2,6 +2,15 @@
 
 单个节点完成前景/背景视频叠加、形状蒙版、位置尺寸、羽化与描边。开发版 **0.2.0**。
 
+## 效果示例
+
+![圆角矩形画中画演示](examples/demo.gif)
+
+6 秒无声演示：海浪作为背景，人物视频通过圆角矩形蒙版叠加在右下角，两路画面同时播放。
+下载 [示例工作流 JSON](examples/video-pip.json)，分别上传自己的背景和前景视频即可复现；形状、位置、尺寸和描边均可在一个节点内修改。
+
+演示素材来自 Pexels：[海浪 / ArtHouse Studio](https://www.pexels.com/video/aerial-view-of-ocean-waves-4631568/)、[人物 / Antoni Shkraba](https://www.pexels.com/video/woman-talking-in-front-of-camera-8048249/)。仅展示画中画合成效果，人物与背景内容无真实关联。[素材许可](https://www.pexels.com/license/)。
+
 ## 安装
 
 在 ComfyUI 的 `custom_nodes` 目录执行：
