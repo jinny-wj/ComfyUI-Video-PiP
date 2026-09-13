@@ -1,0 +1,417 @@
+{
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadVideo",
+      "pos": [
+        0,
+        0
+      ],
+      "size": [
+        280,
+        280
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "文件",
+          "name": "file",
+          "type": "COMBO",
+          "widget": {
+            "name": "file"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "选择要上传的文件",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "视频",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "title": "背景视频（底层）· 海浪",
+      "properties": {
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "background.mp4"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoadVideo",
+      "pos": [
+        0,
+        330
+      ],
+      "size": [
+        280,
+        280
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "文件",
+          "name": "file",
+          "type": "COMBO",
+          "widget": {
+            "name": "file"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "选择要上传的文件",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "视频",
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "title": "前景视频（上层）· 人物",
+      "properties": {
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "foreground.mp4"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "VideoPictureInPicture",
+      "pos": [
+        350,
+        0
+      ],
+      "size": [
+        400,
+        610
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "background_video",
+          "name": "background_video",
+          "type": "VIDEO",
+          "link": 1
+        },
+        {
+          "localized_name": "foreground_video",
+          "name": "foreground_video",
+          "type": "VIDEO",
+          "link": 2
+        },
+        {
+          "localized_name": "shape",
+          "name": "shape",
+          "type": "COMBO",
+          "widget": {
+            "name": "shape"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "position",
+          "name": "position",
+          "type": "COMBO",
+          "widget": {
+            "name": "position"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "x",
+          "name": "x",
+          "type": "INT",
+          "widget": {
+            "name": "x"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "y",
+          "name": "y",
+          "type": "INT",
+          "widget": {
+            "name": "y"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "margin",
+          "name": "margin",
+          "type": "INT",
+          "widget": {
+            "name": "margin"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "fit",
+          "name": "fit",
+          "type": "COMBO",
+          "widget": {
+            "name": "fit"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "opacity",
+          "name": "opacity",
+          "type": "FLOAT",
+          "widget": {
+            "name": "opacity"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "feather",
+          "name": "feather",
+          "type": "FLOAT",
+          "widget": {
+            "name": "feather"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "corner_radius",
+          "name": "corner_radius",
+          "type": "INT",
+          "widget": {
+            "name": "corner_radius"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "border_width",
+          "name": "border_width",
+          "type": "INT",
+          "widget": {
+            "name": "border_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "border_color",
+          "name": "border_color",
+          "type": "STRING",
+          "widget": {
+            "name": "border_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "short_video",
+          "name": "short_video",
+          "type": "COMBO",
+          "widget": {
+            "name": "short_video"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "audio_source",
+          "name": "audio_source",
+          "type": "COMBO",
+          "widget": {
+            "name": "audio_source"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "合成视频",
+          "name": "合成视频",
+          "type": "VIDEO",
+          "links": [
+            3
+          ]
+        },
+        {
+          "localized_name": "静态小窗蒙版",
+          "name": "静态小窗蒙版",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "视频画中画 · 形状 / 位置 / 描边",
+      "properties": {
+        "Node name for S&R": "VideoPictureInPicture"
+      },
+      "widgets_values": [
+        "圆角矩形",
+        "右下",
+        0,
+        0,
+        280,
+        200,
+        24,
+        "居中裁切",
+        1,
+        1,
+        32,
+        4,
+        "#FFFFFF",
+        "循环",
+        "背景声音"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "SaveVideo",
+      "pos": [
+        810,
+        0
+      ],
+      "size": [
+        460,
+        356.75
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "视频",
+          "name": "video",
+          "type": "VIDEO",
+          "link": 3
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "格式",
+          "name": "format",
+          "type": "COMBO",
+          "widget": {
+            "name": "format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "编码器",
+          "name": "codec",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "codec"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": []
+        }
+      ],
+      "title": "合成结果 · 保存视频",
+      "properties": {
+        "Node name for S&R": "SaveVideo"
+      },
+      "widgets_values": [
+        "video/VideoPiP",
+        "mp4",
+        "auto"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      3,
+      0,
+      "VIDEO"
+    ],
+    [
+      2,
+      2,
+      0,
+      3,
+      1,
+      "VIDEO"
+    ],
+    [
+      3,
+      3,
+      0,
+      4,
+      0,
+      "VIDEO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.65,
+      "offset": [
+        30,
+        60
+      ]
+    }
+  },
+  "version": 0.4
+}
